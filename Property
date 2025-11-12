@@ -1,0 +1,9 @@
+properties = new Properties();
+        FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
+        properties.load(fis);
+    }
+
+    public static String getProperty(String key) {
+        return properties.getProperty(key);
+    }
+}
